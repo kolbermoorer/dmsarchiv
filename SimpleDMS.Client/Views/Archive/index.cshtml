@@ -1,0 +1,21 @@
+﻿@{
+
+    ViewBag.Title = "Hello World";
+}
+
+
+<script src="Content/js/archive/ArchiveView.js"></script>
+<script src="Content/js/archive/Tree.js"></script>
+<script src="Content/js/core/Dropzone.js"></script>
+
+<div class="archive-uploader hidden" id="dropzone">
+    <div>Neues Dokument ablegen im ausgewählten Ordner</div>
+    <form enctype="multipart/form-data" id="myform">
+        <input name="file" type="file" />
+    </form>
+
+</div>
+
+<div id="jstree_dmsarchiv">
+    <ul></ul>
+</div>

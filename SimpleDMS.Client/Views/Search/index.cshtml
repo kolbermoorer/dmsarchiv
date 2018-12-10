@@ -1,0 +1,30 @@
+﻿<script src="Content/js/search/SearchView.js"></script>
+<link rel="stylesheet" href="Content/css/search.css" />
+
+<div class="search-container">
+    <div class="search-bar">
+        <input type="text" class="form-control input-search" placeholder="Suche" />
+        <i class="fas fa-search"></i>
+    </div>
+    <div class="search-hits-container">
+        
+        <div class="search-hits">
+            <div class="search-hits-bar">
+                <div class="search-hits-sort">
+                    <span>Ablagedatum absteigend</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="search-hits-list-container generic-list-container">
+                <div class="search-wait-animation hidden">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <span>Suche läuft ...</span>
+                </div>
+                <table class="generic-list" id="tbl-search-files">
+                    <tbody></tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

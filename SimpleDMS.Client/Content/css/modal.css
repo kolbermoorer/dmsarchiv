@@ -1,0 +1,163 @@
+﻿.modal-backdrop {
+    background-color: white;
+}
+
+.modal-backdrop.show {
+    opacity: 0.7;
+}
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal-content {
+    border: 3px solid #378dd3;
+    border-radius: 0px;
+    min-width: 700px;
+}
+
+.modal-header {
+    padding: 10px;
+    cursor: move;
+    border-radius: 0px;
+    background: #378dd3;
+    color: white;
+}
+
+.close-modal-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    margin-top: 3px;
+}
+
+.modal-body {
+    padding: 0px;
+}
+
+.modal-footer {
+    height: 35px;
+    background: #f2f2f2;
+    padding: 5px;
+}
+
+.btn-modal {
+    padding: 3px 3px 3px 3px;
+    border-width: 1px;
+    border-style: solid;
+    background-image: none;
+    background-color: #378dd3;
+    border-color: #1168af;
+    font-size: 10px;
+    color: white;
+    width: 75px;
+    border-radius: 0px;
+}
+
+.metadata-container, .metadata-container-masklist, .metadata-container-indexfields {
+    min-height: 400px;
+}
+
+.metadata-container-masklist {
+    width: 20%;
+    display: inline-block;
+    float: left;
+    border-right: 1px solid lightgray;
+}
+
+.metadata-container-masklist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.metadata-container-masklist li {
+    list-style: none;
+    padding: 0;
+    padding: 5px 5px;
+    border-bottom: 1px solid #ededed;
+    cursor: pointer;
+}
+
+.modal .nav-tabs {
+    background: #e9e9e9;
+    padding-top: 14px;
+    padding-left: 10px;
+    color: #949494;
+}
+
+.modal .nav-tabs li {
+    padding: 5px 10px;
+}
+
+.modal .nav-tabs li.active {
+    border-top: 1px solid #dcdcdc;
+}
+
+.modal .tab-content {
+    padding: 10px;
+}
+
+.metadata-container-indexfields {
+    width: 80%;
+    display: inline-block;
+    float: left;
+}
+
+.metadata-container-indexfields table, .metadata-container-indexfields tr td:last-child, .metadata-container-indexfields input[type=text] {
+    width: 100%;
+}
+
+.metadata-container-indexfields tr td {
+    padding-top: 5px;
+}
+
+.metadata-container-indexfields tr td:first-child, .metadata-container-indexfields tr td:nth-child(3) {
+    padding-right: 30px;
+}
+
+.metadata-container-indexfields tr td:nth-child(2), .metadata-container-indexfields tr td:nth-child(4) {
+    min-width: 160px;
+}
+
+.metadata-container-indexfields tr td:nth-child(3) {
+    padding-left: 50px;
+    white-space: nowrap;
+}
+
+.metadata-container-indexfields input[type="text"] {
+    padding-left: 5px;
+}
+
+input:read-only {
+    cursor: default;
+    color: #888;
+    pointer-events: none;
+}
+
+.metadata-container-indexfields td input {
+    border: 1px solid #a1a1a1;
+}
+
+table div .fas {
+    margin: auto -15px;
+    cursor: pointer;
+}
+
+ul.dynkwl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background: white;
+    width: 300px;
+}
+
+ul.dynkwl li {
+    padding: 5px;
+    border: 1px solid lightgray;
+}
+
+ul.dynkwl li:hover {
+    cursor: pointer;
+    background: #dcecf6;
+} 

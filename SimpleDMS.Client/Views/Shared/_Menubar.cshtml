@@ -1,0 +1,221 @@
+﻿<div class="menu-bar noselect">
+    <div class="tabs">
+        <ul class="nav nav-tabs">
+            <li><a data-toggle="tab" data-link="Default" href="#home-tab">START</a></li>
+            <li><a data-toggle="tab" href="#document-tab">DOKUMENT</a></li>
+            <li><a data-toggle="tab" href="#view-tab">ANSICHT</a></li>
+            <li><a data-toggle="tab" data-link="Search" href="#search-tab">SUCHE</a></li>
+            <li><a data-toggle="tab" data-link="Intray" href="#intray-tab">ARCHIVIEREN</a></li>
+
+            <li class="shortcut-icons">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img src="Content/images/refresh-icon.png" data-toggle="tooltip" title="Some tooltip text!" /></td>
+                            <td class="toggleFullscreen"><img src="Content/images/fullscreen-icon.png" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home-tab" class="tab-pane fade">
+                <div class="button-group">
+                    <table class="button-group-items bt-sm">
+                        <tbody>
+                            <tr>
+                                <td class="disabled">
+                                    <img src="Content/images/home-icon.png" />
+                                    <span>Archivanfang</span>
+                                </td>
+                                <td class="disabled">
+                                    <img src="Content/images/clipboard-icon.png" />
+                                    <span>Auf das Klemmbrett legen</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-group-title">
+                        Navigation
+                    </div>
+                </div>
+                <div class="button-group">
+                    <table class="button-group-items bt-lg">
+                        <tbody>
+                            <tr>
+                                @*<td class="disabled" id="button-addFile">
+                                    <div class="button-image">
+                                        <img src="../../Content/images/new-document-icon.png" />
+                                    </div>
+                                    <span>Datei einfügen</span>
+                                </td>*@
+                                <td class="disabled" id="button-addFolder">
+                                    <div class="button-image">
+                                        <img src="Content/images/new-folder-icon.png" />
+                                    </div>
+                                    <span>Neuer Ordner</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-group-title">
+                        Neu
+                    </div>
+                </div>
+            </div>
+            <div id="document-tab" class="tab-pane fade">
+                <div class="button-group">
+                    <table class="button-group-items bt-lg">
+                        <tbody>
+                            <tr>
+                                <td class="" id="button-addFulltext">
+                                    <div class="button-image">
+                                        <img src="Content/images/menu-icons/large/icons8-textfeld-add-30.png" />
+                                    </div>
+                                    <span>In Volltext aufnehmen</span>
+                                </td>
+                                <td class="" id="button-removeFulltext">
+                                    <div class="button-image">
+                                        <img src="Content/images/menu-icons/large/icons8-textfeld-remove-30.png" />
+                                    </div>
+                                    <span>Aus Volltext entfernen</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-group-title">
+                        Verwaltung
+                    </div>
+                </div>
+            </div>
+            <div id="view-tab" class="tab-pane fade">
+
+            </div>
+            <div id="search-tab" class="tab-pane fade">
+                <div class="button-group">
+                    <table class="button-group-items bt-lg">
+                        <tbody>
+                            <tr>
+                                <td class="" id="button-goToLastElement">
+                                    <div class="button-image">
+                                        <img src="Content/images/menu-icons/fctIconGoto.ico" />
+                                    </div>
+                                    <span>Gehe zu</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-group-title">
+                        Aktion
+                    </div>
+                </div>
+            </div>
+            <div id="intray-tab" class="tab-pane fade">
+                <div class="button-group">
+                    <table class="button-group-items bt-lg">
+                        <tbody>
+                            <tr>
+                                <td id="button-addFile">
+                                    <div class="button-image">
+                                        <img src="Content/images/menu-icons/commandLinkCopyInIntray.ico" />
+                                    </div>
+                                    <span>Datei einfügen</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-group-title">
+                        Einfügen
+                    </div>
+                </div>
+                <div class="button-group">
+                    <table class="button-group-items bt-lg">
+                        <tbody>
+                            <tr>
+                                <td class="" id="button-mergeDocuments">
+                                    <div class="button-image">
+                                        <img src="Content/images/menu-icons/fctIconMergeTiffs.ico" />
+                                    </div>
+                                    <span>Seiten klammern</span>
+                                </td>
+                                <td class="" id="button-splitDocuments">
+                                    <div class="button-image">
+                                        <img src="Content/images/menu-icons/fctIconSplitMultipageTiff.ico" />
+                                    </div>
+                                    <span>Seiten trennen</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-group-title">
+                        Seiten organisieren
+                    </div>
+                </div>
+                <div class="button-group">
+                    <table class="button-group-items bt-lg">
+                        <tbody>
+                            <tr>
+                                <td class="" id="button-openMetadata">
+                                    <div class="button-image">
+                                        <img src="Content/images/menu-icons/fctIconAddSearchFilterMask.ico" />
+                                    </div>
+                                    <span>Verschlagwortung</span>
+                                </td>
+                                <td class="" id="button-removeMetadata">
+                                    <div class="button-image">
+                                        <img src="Content/images/menu-icons/fctIconDeleteIndex.ico" />
+                                    </div>
+                                    <span>Verschlagwortung löschen</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-group-title">
+                        Veschlagwortung
+                    </div>
+                </div>
+                <div class="button-group">
+                    <table class="button-group-items bt-lg">
+                        <tbody>
+                            <tr>
+                                <td class="" id="button-archiveDocument">
+                                    <div class="button-image">
+                                        <img src="Content/images/menu-icons/fctIconInsertIntoArchive.ico" />
+                                    </div>
+                                    <span>Archivablage</span>
+                                </td>
+                                <td class="disabled" id="button-addFolder">
+                                    <div class="button-image">
+                                        <img src="Content/images/menu-icons/fctIconDirectInsertIntoArchive-Kopie.ico" />
+                                    </div>
+                                    <span>Serienablage</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-group-title">
+                        Ablage
+                    </div>
+                </div>
+                <div class="button-group">
+                    <table class="button-group-items bt-lg">
+                        <tbody>
+                            <tr>
+                                <td class="" id="button-deleteDocuments">
+                                    <div class="button-image">
+                                        <img src="Content/images/menu-icons/fctIconDelete.ico" />
+                                    </div>
+                                    <span>Löschen</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-group-title">
+                        Löschen
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

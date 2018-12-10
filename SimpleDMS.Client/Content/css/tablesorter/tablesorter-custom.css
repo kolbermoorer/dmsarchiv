@@ -1,0 +1,44 @@
+﻿table.tablesorter {
+    margin: 0;
+}
+
+table.tablesorter.fixed-headers thead {
+    position: fixed;
+}
+
+table.tablesorter th:first-child {
+    border-left: none;
+}
+
+table.tablesorter th:last-child {
+    border-right: none;
+}
+
+table.tablesorter img {
+    width: 16px;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    background-color: white;
+    font-weight: normal;
+    border: 1px solid lightgray;
+    border-top: none;
+    font-size: inherit;
+    padding: 4px;
+}
+
+table.tablesorter thead tr .header:not([class*="headerSort"]) {
+    background-image: none;
+}
+
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    background-color: white;
+    font-weight: bolder;
+}
+
+table.tablesorter tr {
+    cursor: default;
+}
+
+
+

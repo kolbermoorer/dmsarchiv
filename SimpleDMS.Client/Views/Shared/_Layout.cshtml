@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="Content/css/jquery.contextMenu.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="Content/lib/bootstrap/bootstrap-notify.min.js"></script>
+    <script src="Content/lib/tablesorter/jquery.tablesorter.min.js"></script>
+    <script src="Content/lib/jstree/jstree.min.js"></script>
+    <script src="Content/lib/splitter/jquery.splitter.js"></script>
+    <script src="Content/lib/moment/moment-with-locales.js"></script>
+
+    <script src="Content/js/core/User.js"></script>
+    <script src="Content/js/core/DMS.js"></script>
+    <script src="Content/js/core/DocumentViewer.js"></script>
+    <script src="Content/js/core/main.js"></script>
+    <script src="Content/js/core/Viewport.js"></script>
+    <script src="Content/js/core/Mask.js"></script>
+    <script src="Content/js/core/navbar.listeners.js"></script>
+    <script src="Content/js/core/tablesorter-custom.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.ui.position.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+    <link rel="stylesheet" href="Content/css/tablesorter/tablesorter-blue.css" />
+    <link rel="stylesheet" href="Content/css/tablesorter/tablesorter-custom.css" />
+    <link rel="stylesheet" href="Content/css/jquery.splitter.css" />
+    <link rel="stylesheet" href="Content/css/main.css" />
+    <link rel="stylesheet" href="Content/css/menu-bar.css" />
+    <link rel="stylesheet" href="Content/css/modal.css" />
+    <link rel="stylesheet" href="Content/css/dropzone.css" />
+</head>
+<body>
+    @Html.Partial("Views/Shared/_Navbar")
+    @Html.Partial("Views/Shared/_Menubar")
+
+    @Html.Partial("Views/Shared/_Modal_MetadataForm")
+
+    <div class="panel-container">
+        <div class="panel-left section-picker">
+            @RenderBody()
+        </div>
+
+        <div class="panel-right section-document">
+            <div class="document-menu-bar">
+                <i class="fas fa-angle-double-left"></i>
+                <span class="document-title">DMSArchiv</span>
+                <i class="fas fa-angle-double-right"></i>
+            </div>
+            <div class="document-container">
+                <div class="splitter-helper hidden">
+
+                </div>
+                <table class="generic-list items-list-table"><tbody></tbody></table>
+                <!--<embed id="document-rendering" src="/Archive/LoadDocument?id=9999" width="100%" height="100%" />-->
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

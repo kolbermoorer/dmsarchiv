@@ -1,0 +1,68 @@
+﻿<!-- Modal -->
+<div class="modal fade" id="modal-metadata" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span><span class="title">Neuer Ordner</span><i class="fas fa-times-circle close-modal-icon" data-dismiss="modal"></i></span>
+            </div>
+            <div class="modal-body">
+                <div class="metadata-container">
+                    <div class="metadata-container-masklist">
+                        <ul>
+                            <!--<li class="selected">Ordner</li>-->
+                        </ul>
+                    </div>
+                    <div class="metadata-container-indexfields">
+                        <div class="tabs">
+                            <ul class="nav nav-tabs hidden">
+                                <li class="active"><a data-toggle="tab" href="#basis-tab">Basis</a></li>
+                                <li><a data-toggle="tab" href="#extratext-tab">Zusatztext</a></li>
+                                <li><a data-toggle="tab" href="#options-tab">Optionen</a></li>
+                                <li><a data-toggle="tab" href="#userrights-tab">Berechtigungen</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="basis-tab" class="tab-pane fade in active show">
+                                    <table width="100%" class="table-metadata">
+                                        <tbody>
+                                            <tr class="index-default"><td>Kurzbezeichnung</td><td colspan="3"><input id="input-objshort" type="text" data-linekey="NAME"/></td></tr>
+                                            <tr class="index-default">
+                                                <td>Datum</td>
+                                                <td><div><input class="datepicker" type="text" data-linekey="DOCUMENTDATE"><i class="fas fa-calendar-alt"></i></div></td>
+
+                                                <td>Aktuelle Version</td>
+                                                <td><input type="text" data-linekey="VERSION" readonly /></td>
+                                            </tr>
+                                            <tr class="index-default">
+                                                <td>Ablagedatum</td>
+                                                <td><div><input class="datepicker" type="text" data-linekey="CREATIONDATE" readonly></div></td>
+
+                                                <td>Bearbeiter</td>
+                                                <td><input type="text" data-linekey="EDITOR" readonly /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="extratext-tab" class="tab-pane fade">
+
+                                </div>
+                                <div id="options-tab" class="tab-pane fade">
+
+                                </div>
+                                <div id="userrights-tab" class="tab-pane fade">
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-modal" id="btn-modal-metadata-ok">OK</button>
+                <button type="button" class="btn btn-modal" data-dismiss="modal">Abbrechen</button>
+
+            </div>
+        </div>
+    </div>
+</div>

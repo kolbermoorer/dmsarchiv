@@ -1,0 +1,41 @@
+﻿.search-bar {
+    padding: 10px;
+}
+
+.search-container .search-bar .fas {
+    float: right;
+    margin-right: 8px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.input-search {
+    height: inherit;
+
+}
+
+.search-hits-bar {
+    background: #f2f2f2;
+    border: 1px solid #dcdcdc;
+    text-align: right;
+}
+
+.search-hits-bar .search-hits-sort {
+    display: inline-block;
+    cursor: pointer;
+    padding: 4px 10px;
+}
+
+.search-hits .search-wait-animation {
+    position: absolute;
+    background: lightgray;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    color: black;
+    margin-left: -50px;
+}

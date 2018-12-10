@@ -1,0 +1,31 @@
+﻿<script src="Content/js/intray/IntrayView.js"></script>
+<script src="Content/js/core/Dropzone.js"></script>
+
+<link rel="stylesheet" href="../../Content/css/intray.css" />
+
+<div class="intray-uploader hidden" id="dropzone">
+    <div>Neues Dokument ablegen in Postbox</div>
+    <form enctype="multipart/form-data" id="myform">
+        <input name="file" type="file" />
+    </form>
+
+</div>
+<div class="wrapper">
+    <table id="tbl-intray-files" class="tablesorter ">
+        <!--fixed-headers-->
+
+        <thead>
+            <tr>
+                <th>Typ</th>
+                <th>Kurzbezeichnung</th>
+                <th>Dateidatum</th>
+                <th>Verschlagwortungsmaske</th>
+                <th>Dateiname</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+
+
